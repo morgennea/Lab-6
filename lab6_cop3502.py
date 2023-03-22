@@ -1,7 +1,9 @@
 #morgenne
 def decode(encoded_password):
-    #will implement functionality later
-    pass
+    decode = ""
+    for i in encoded_password:
+        decoded += str(((int(i) - 3) + 10) % 10 )
+    return decoded
 
 def encode(original_password):
     encoded = ""
